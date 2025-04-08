@@ -94,7 +94,8 @@ grafo.add_edge("Oradea", "Sibiu", weight=151)
 grafo.add_edge("Zerind", "Oradea", weight=71)
 grafo.add_edge("Zerind", "Arad", weight=75)
 
-my_dict = {
+# Distâncias em linha reta (heurísticas) 
+dist = {
   "Arad": 366,
   "Bucharest": 0,
   "Craiova": 160,

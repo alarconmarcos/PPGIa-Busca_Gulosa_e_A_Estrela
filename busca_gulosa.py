@@ -8,10 +8,10 @@ def gulosa(grafo, vertice):
     menor_vertice = None
     menor_valor = float("inf")  # Inicializa com infinito
     for vizinho in grafo.neighbors(local_atual):
-      if vizinho in gf.my_dict:
+      if vizinho in gf.dist:
         if(vizinho not in caminho):
-            if (gf.my_dict[vizinho] < menor_valor):
-              menor_valor = gf.my_dict[vizinho]
+            if (gf.dist[vizinho] < menor_valor):
+              menor_valor = gf.dist[vizinho]
               menor_vertice = vizinho
     local_atual = menor_vertice
     caminho.append(local_atual)
