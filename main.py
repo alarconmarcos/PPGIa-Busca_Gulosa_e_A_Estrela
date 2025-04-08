@@ -4,12 +4,13 @@ import busca_a_estrela as star
 import matplotlib.pyplot as plt
 
 
-def cabecalho():
+def Lista_Cidades():
         print("================================================================================")
         print("\n")
         print("Lista de Cidades:")
         print("\n")
-        print("Arad, Bucharest, Craiova, Drobeta, Eforie, Fagaras, Giurgiu, Hirsova, Iasi, Lugoj, Mehadia, \nNeamt, Oradea, Pitesti, RimnicuVilcea, Sibiu, Timisoara, Urziceni, Vaslui e Zerind")
+        print("Arad, Bucharest, Craiova, Drobeta, Eforie, Fagaras, Giurgiu, Hirsova, Iasi, Lugoj, Mehadia,")
+        print("Neamt, Oradea, Pitesti, RimnicuVilcea, Sibiu, Timisoara, Urziceni, Vaslui e Zerind")
         print("\n================================================================================")
         print("\n")
     
@@ -27,7 +28,7 @@ while True:
 
     if opcao == '1':
         
-        cabecalho()
+        Lista_Cidades()
         
         # Executa o algoritmo guloso
         cidade_origem = input("Digite a cidade de origem: ")
@@ -57,7 +58,7 @@ while True:
         print("======================================================================\n")
     elif opcao == '2':
 
-        cabecalho()
+        Lista_Cidades()
         
         cidade_origem = input("Digite a cidade de origem: ")
 
