@@ -95,6 +95,28 @@ while True:
         busca.nx.draw_networkx_labels(busca.grafo, pos)
         busca.nx.draw_networkx_edge_labels(busca.grafo, pos, edge_labels=labels)
         plt.title("Grafo de Cidades")
+
+        # Se o resultado1 ou resultado2 estiverem disponíveis, exiba o caminho correspondente
+        if 'resultado1' in locals():
+            caminho1 = resultado1
+        else:
+            caminho1 = []
+        if 'resultado2' in locals():
+            caminho2 = resultado2
+        else:
+            caminho2 = []
+
+        if caminho1:
+            caminho_pos = [pos[cidade] for cidade in caminho1]
+            plt.plot(*zip(*caminho_pos), color='red', linewidth=2, label='Gulosa')
+            plt.legend()
+        
+        if caminho2:
+            caminho_pos = [pos[cidade] for cidade in caminho2]
+            plt.plot(*zip(*caminho_pos), color='blue', linewidth=2, label='A*')
+            plt.legend()
+
+  
         plt.show()
 
     elif opcao == '0':
