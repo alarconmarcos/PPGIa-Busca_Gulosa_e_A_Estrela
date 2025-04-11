@@ -5,24 +5,24 @@ import matplotlib.pyplot as plt
 
 
 def Lista_Cidades():
-        print("================================================================================")
-        print("\n")
+        print("=" * 100+"\n")
         print("Lista de Cidades:")
         print("\n")
         print("Arad, Bucharest, Craiova, Drobeta, Eforie, Fagaras, Giurgiu, Hirsova, Iasi, Lugoj, Mehadia,")
         print("Neamt, Oradea, Pitesti, RimnicuVilcea, Sibiu, Timisoara, Urziceni, Vaslui e Zerind")
-        print("\n================================================================================")
-        print("\n")
+        print("\n"+"=" * 100+"\n")
+
     
 
 while True:
-    print("================================")
-    print("\nEscolha uma opção:")
-    print("\n1. Busca Gulosa")
+
+    print("\n"+"=" * 50+"\n")
+    print("Escolha uma opção:\n")
+    print("1. Busca Gulosa")
     print("2. Busca A*")
     print("3. Exibir gráfico")
-    print("0. Sair\n")
-    print("================================\n") 
+    print("0. Sair")
+    print("\n"+"=" * 50+"\n")
 
     opcao = input("Digite o número da opção desejada: ")
 
@@ -35,9 +35,9 @@ while True:
         
         resultado1 = gs.gulosa(busca.grafo, cidade_origem)
 
-        print("\n================================")
-        print("     Algoritmo Busca Gulosa     ")
-        print("================================\n")
+        print("\n"+"=" * 50)
+        print(" " * 15+"Algoritmo Busca Gulosa")
+        print("=" * 50 +"\n")
 
         distancia_total = 0  # Inicializa a distância total
 
@@ -53,9 +53,8 @@ while True:
             else:
                 print(f"Não há aresta entre {cidade_atual} e {proxima_cidade}")
 
-        print("\nDistância total:", distancia_total)  # Imprime a distância total    
-        print("\n")    
-        print("======================================================================\n")
+        print("\nDistância total:", distancia_total)  # Imprime a distância total
+            
     elif opcao == '2':
 
         Lista_Cidades()
@@ -64,9 +63,9 @@ while True:
 
         resultado2 = star.a_estrela(busca.grafo, cidade_origem)
 
-        print("\n================================")
-        print("         Algoritmo A*           ")
-        print("================================\n")
+        print("\n"+"=" * 50)
+        print(" " * 20+"Algoritmo A*")
+        print("=" * 50 +"\n")
     
 
         distancia_total = 0  # Inicializa a distância total
