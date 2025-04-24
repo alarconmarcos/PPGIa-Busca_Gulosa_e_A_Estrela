@@ -37,7 +37,7 @@ grafo.add_edge("Bucharest", "Giurgiu", weight=90)
 
 grafo.add_edge("Craiova", "Pitesti", weight=138)
 grafo.add_edge("Craiova", "RimnicuVilcea", weight=146)
-grafo.add_edge("Craiova", "Drobeta", weight=128)
+grafo.add_edge("Craiova", "Drobeta", weight=120)
 
 grafo.add_edge("Drobeta", "Mehadia", weight=75)
 grafo.add_edge("Drobeta", "Craiova", weight=120)
@@ -63,7 +63,7 @@ grafo.add_edge("Mehadia", "Lugoj", weight=70)
 
 grafo.add_edge("Neamt", "Iasi", weight=87)
 
-grafo.add_edge("Oradea", "Zerint", weight=71)
+grafo.add_edge("Oradea", "Zerind", weight=71)
 grafo.add_edge("Oradea", "Sibiu", weight=151)
 
 grafo.add_edge("Pitesti", "RimnicuVilcea", weight=97)
@@ -90,6 +90,7 @@ grafo.add_edge("Vaslui", "Iasi", weight=92)
 grafo.add_edge("Vaslui", "Urziceni", weight=142)
 
 grafo.add_edge("Oradea", "Sibiu", weight=151)
+grafo.add_edge("Oradea", "Zerind", weight=71)
 
 grafo.add_edge("Zerind", "Oradea", weight=71)
 grafo.add_edge("Zerind", "Arad", weight=75)
