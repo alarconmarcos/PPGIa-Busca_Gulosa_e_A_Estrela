@@ -27,7 +27,7 @@ while True:
 
     opcao = input("Digite o número da opção desejada: ")
 
-    if opcao == '1':
+    if opcao == '1': #Busca Gulosa
         
         Lista_Cidades()
         
@@ -56,7 +56,7 @@ while True:
 
         print("\nDistância total: " + str(distancia_total_gulosa) + " Km")  # Imprime a distância total
             
-    elif opcao == '2':
+    elif opcao == '2': #Busca A*
 
         Lista_Cidades()
         
@@ -85,7 +85,7 @@ while True:
 
         print("\nDistância total: " + str(distancia_total_astar) + " Km")  # Imprime a distância total
 
-    elif opcao == '3':
+    elif opcao == '3': # Exibir gráfico
         
         plt.figure(figsize=(12, 9))
 
@@ -149,8 +149,8 @@ while True:
         plt.gca().invert_yaxis()        
         plt.show()
 
-    elif opcao == '0':
+    elif opcao == '0': # Sair do programa
         print("Programa encerrado.")
         break
-    else:
+    else: # Opção inválida
         print("Opção inválida. Tente novamente.")
