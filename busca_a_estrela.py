@@ -1,6 +1,5 @@
 import grafo as gf
 
-
 def a_estrela(grafo, vertice):
   local_atual = vertice
   caminho = []
